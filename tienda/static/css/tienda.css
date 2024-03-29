@@ -1,6 +1,12 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
 /* Estilos para el encabezado */
 header {
-    background-color: #55aad876; /* Color de fondo */
+    background-color: #56496c; /* Color de fondo */
     padding: 20px; /* Espaciado interno */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
     border-radius: 5px; /* Bordes redondeados */
@@ -18,35 +24,71 @@ header h1 {
 
 /* Estilo para el título principal */
 h1 a {
-    color: #333; /* Color del texto */
-    font-size: 30px; /* Tamaño de fuente */
+    color: #efedf2; /* Color del texto */
+    font-size: 36px; /* Tamaño de fuente */
     text-align: center; /* Alineación del texto */
-    margin-top: 20px; /* Espacio superior */
+    margin-top: 30px; /* Espacio superior */
+    text-decoration: none !important; /* Quitar subrayado */
+    transition: color 0.3s ease; /* Transición suave del color */
 }
+
+/* Cambiar color al pasar el ratón */
+h1 a:hover {
+    color: #b0aeaeed; /* Nuevo color al pasar el ratón */
+}
+
 
 /* Estilo para los nombres de los productos */
 h2.producto-nombre {
-    color: #666; /* Color del texto */
-    font-size: 24px; /* Tamaño de fuente */
-    margin-bottom: 5px; /* Espacio inferior */
+    color: #6d1111; /* Color del texto */
+    font-size: 28px; /* Tamaño de fuente */
+    margin-bottom: 10px; /* Espacio inferior */
+    text-decoration: none;
 }
+
+/* Estilos para los nombres de los productos */
+h2.producto-nombre a {
+    color: #6d1111; /* Color del texto */
+    font-size: 28px; /* Tamaño de fuente */
+    margin-bottom: 10px; /* Espacio inferior */
+    text-decoration: none; /* Quitar subrayado */
+    transition: color 0.3s ease; /* Transición suave del color */
+}
+
+/* Cambiar color al pasar el ratón */
+h2.producto-nombre a:hover {
+    color: #9c5f5f7a; /* Nuevo color al pasar el ratón */
+}
+
 
 /* Estilo para los precios de los productos */
 p.producto-precio {
-    color: #C25100; /* Color del texto */
+    color: #052602fc; /* Color del texto */
     font-size: 20px; /* Tamaño de fuente */
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+/* Estilo para la descripción de los productos */
+p.producto-descripcion {
+    color: #666; /* Color del texto */
+    font-size: 20px; /* Tamaño de fuente */
+    line-height: 1.5; /* Altura de línea */
 }
 
 /* Estilo para el contenedor de cada producto */
 div.producto {
-    margin-bottom: 20px; /* Espacio inferior */
+    margin: 0 auto; /* Centrar horizontalmente */
+    max-width: 100%; /* Ancho máximo */
+    margin-top: 30px;
+    margin-bottom: 30px; /* Espacio inferior */
     padding: 20px; /* Espaciado interno */
-    border: 1px solid #ccc; /* Borde con color gris claro */
+    border: 1px solid #cccccc; /* Borde con color gris claro */
     border-radius: 10px; /* Bordes redondeados */
-    background-color: #fff; /* Color de fondo */
+    background-color: #d0e0f54b; /* Color de fondo */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
     transition: box-shadow 0.3s ease; /* Transición suave */
 }
+
 
 /* Efecto de hover para resaltar los productos */
 div.producto:hover {

@@ -1,28 +1,14 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="{% static 'css/tienda.css' %}">
+{% extends 'tienda/base.html' %}
 
-    <title>Tienda Online</title>
-</head>
-<body>
-    <header>
-        <div>
-            <h1><a href="/">Tienda Online</a></h1>
-        </div>
-    </header>
+{% block title %}
+    Lista de productos - Tienda Online
+{% endblock %}
+
+{% block content %}
     {% for producto in productos %}
         <div class="producto">
-            <h2 class="producto-nombre">{{ producto.nombre }}</h2>
+            <h2 class="producto-nombre"><a href="{% url 'producto_detalle' pk=producto.pk %}">{{ producto.nombre }}</a></h2>
             <p class="producto-precio">Precio: {{ producto.precio }}</p>
         </div>
     {% endfor %}
-        
-</body>
-</html>
+{% endblock %}
